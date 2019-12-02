@@ -1,7 +1,7 @@
 use crate::utils;
 
 pub fn solve() {
-    let lines = get_input();
+    let lines = utils::lines_from_file("input_1.1.txt");
 
     let mut sum1: i32 = 0;
     let mut sum2: i32 = 0;
@@ -12,10 +12,6 @@ pub fn solve() {
     }
     println!("Day1/Part1: {:?}", sum1);
     println!("Day1/Part2: {:?}", sum2);
-}
-
-fn get_input() -> Vec<String> {
-    utils::lines_from_file("input_1.1.txt")
 }
 
 fn required_fuel(mass: i32) -> i32 {
