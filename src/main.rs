@@ -1,16 +1,12 @@
 mod utils;
 mod day01;
 mod day02;
+mod day03;
+mod day08;
 
 fn main() {
-    solve_day_1();
-    solve_day_2();
-}
-
-fn solve_day_1() {
     day01::solve();
-}
-
-fn solve_day_2() {
     day02::solve();
+    day03::solve();
+    day08::solve();
 }
